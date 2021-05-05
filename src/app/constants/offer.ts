@@ -1,0 +1,1 @@
+export const URLOFFER = "assets/ofertas.json"

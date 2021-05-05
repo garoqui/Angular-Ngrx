@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row p-3">
+      <div class="col-sm">
+        <select (change)="changeState($event)" class="form-select" aria-label="Default select example">
+            <option selected>Seleccione una oferta</option>
+            <option *ngFor= "let offer of offersMenu" value={{offer.id}}>{{offer.name}}</option>
+            
+          </select>
+      </div>
+      <div class="col-sm">
+        <app-offer></app-offer>
+      </div>   
+    </div>
+
+
+    <div class="row p-3">
+      <div class="col-sm">
+        <app-characteristics></app-characteristics>
+      </div>
+      <div class="col-sm">
+        <app-prices></app-prices>
+      </div>   
+    </div>
+  </div>
